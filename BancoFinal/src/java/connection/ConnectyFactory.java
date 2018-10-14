@@ -7,8 +7,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /**
@@ -36,7 +34,7 @@ public class ConnectyFactory {
             try {
                 con.close();
             } catch (Exception ex) {
-                throw new RuntimeException("Erro: " + ex);
+                throw new RuntimeException("Erro na conexão: " + ex);
             }
             
         }
@@ -49,7 +47,7 @@ public class ConnectyFactory {
                 stmt.close();
                 con.close();
             } catch (SQLException ex) {
-                throw new RuntimeException("Erro: " + ex);
+                throw new RuntimeException("Erro na conexão: " + ex);
             }
             
         }
@@ -62,7 +60,7 @@ public class ConnectyFactory {
                 stmt.close();
                 con.close();
             } catch (SQLException ex) {
-                throw new RuntimeException("Erro: " + ex);
+                throw new RuntimeException("Erro na conexão: " + ex);
             }
             
         }

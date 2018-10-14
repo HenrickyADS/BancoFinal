@@ -23,7 +23,8 @@
    </td>
    <td align="left">
     <input type="text" name="Valor á Retirar/Adicionar" size="11" maxlength="5">
-    <input type="submit"name="Salvar">
+    <input type="submit"name="Salvar"><p></p>
+    <input type="submit" name="Salvar">
    
    </td>
 

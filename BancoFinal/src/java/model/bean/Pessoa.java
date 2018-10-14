@@ -9,25 +9,43 @@ package model.bean;
  *
  * @author Home
  */
-public class Pessoa {
-    
-    private int IdDaConta;
-    private int CPF;
+public class Pessoa {    
 
-    public int getIdDaConta() {
-        return IdDaConta;
+    private Long id;
+    private String cpf;
+    private Double valor;
+    private String nome;
+
+    public Long getId() {
+        return id;
     }
 
-    public void setIdDaConta(int IdDaConta) {
-        this.IdDaConta = IdDaConta;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public int getCPF() {
-        return CPF;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setCPF(int CPF) {
-        this.CPF = CPF;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
-    
+
+    public Double getValor() {
+        return valor;
+    }
+
+    public void setValor(Double valor) {
+        this.valor = valor;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
 }
