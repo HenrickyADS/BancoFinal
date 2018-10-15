@@ -25,6 +25,8 @@
     <input type="text" name="Valor á Retirar/Adicionar" size="11" maxlength="5">
     <button>OK</button>
     
+    <a href="localhost:8080/BancoFinal/Extrato.jsp"><button>Ver Extrato</a>
+    
    
    </td>
 
