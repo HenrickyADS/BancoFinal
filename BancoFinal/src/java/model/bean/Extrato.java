@@ -2,19 +2,11 @@ package model.bean;
 
 public class Extrato {
 
-    private Long id;
+    
     private String operacao;
     private Double valor;
-    private Long idContaCorrente;
-    private String CPF_Titular;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private String CPFTitular;
+    private Long   idContaCorrente;
 
     public String getOperacao() {
         return operacao;
@@ -32,22 +24,23 @@ public class Extrato {
         this.valor = valor;
     }
 
-    public Long getidContaCorrente() {
+    public String getCPFTitular() {
+        return CPFTitular;
+    }
+
+    public void setCPFTitular(String CPFTitular) {
+        this.CPFTitular = CPFTitular;
+    }
+
+    public Long getIdContaCorrente() {
         return idContaCorrente;
     }
 
-    public void setIdConta(Long idConta) {
-        this.idContaCorrente = idConta;
+    public void setIdContaCorrente(Long idContaCorrente) {
+        this.idContaCorrente = idContaCorrente;
     }
-
-    public String getCPF_Titular() {
-        return CPF_Titular;
-    }
-
-    public void setCPF_Titular(String cpfResponsavel) {
-        this.CPF_Titular = cpfResponsavel;
-    }
-
-
+    
+    
+    
 
 }
